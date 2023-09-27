@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    height: auto;
+    border: 2px solid black;
+}
+
+header h1{
+    background-color: rgba(80,80,80,255);
+    font-size: 40px;
+    text-align: center;
+    color: rgba(254,254,254,255);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 0;
+   
+}
+nav{
+   position: sticky;
+   top: 0;
+    
+}
+.c1{
+
+    background-color:rgba(127,127,127,255) ;
+    margin: 0;
+}
+.c1 li {
+    display: inline-block;
+    padding: 10px;
+  
+}
+.c1 li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(240,240,237,255);
+   
+}
+
+.c1 li :hover{
+    background-color:black ;
+    margin: auto;
+}
+.hoverList1,
+.hoverList2{
+    background-color:whitesmoke ;
+    display: none;
+    position: absolute;
+    width: auto;
+    padding: 0;
+    top: 43px;
+}
+/*.hoverList1 :hover,
+.hoverList2 :hover{
+    background-color:whitesmoke
+}*/
+.c1 li:nth-child(2):hover .hoverList1,
+.c1 li:nth-child(3):hover .hoverList2{
+    display: block;
+   
+}
+.hoverList1 li,
+.hoverList2 li{
+    display: block;
+    margin: 0;
+    background-color: initial;
+}
+/*
+.hoverList1 li :hover ,
+.hoverList2 li :hover{
+    background-color: gainsboro;
+}*/
+.hoverList1 li a,
+.hoverList2 li a{
+    color: skyblue;
+    font-size: 15px;
+}
+
+.animation{
+    border: 2px solid steelblue;
+    width: auto;
+    height: 400px;
+    animation-name: imageSlide;
+    animation-duration: 25s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes imageSlide {
+    0%{
+        background-image: url(ani1.jpg);
+        width: auto;
+        height: 400;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    25%{
+        background-image: url(ani2.png);
+        width: auto;
+        height: 400;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    50%{
+        background-image: url(ani3.jpg);
+        width: auto;
+        height: 400;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    75%{
+        background-image: url(ani4.jpg);
+        width: auto;
+        height: 400;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    100%{
+        background-image: url(ani5.jpg);
+        width: auto;
+        height: 400;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+}
+
+
+
+footer h6{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
